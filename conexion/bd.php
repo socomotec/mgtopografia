@@ -6,7 +6,7 @@ class Conectar{
 		$direccion = "localhost"; // dirección de la base de datos
 		$usuario = "root";		  // Usuario que utilizaremos
 		$password = "";			  // Contraseña del usuario
-		$bd = "jardin";				  // nombre de la base de datos a utilizar
+		$bd = "mgtopografia";				  // nombre de la base de datos a utilizar
 
 
 		$conexion = new mysqli($direccion, $usuario, $password, $bd);
