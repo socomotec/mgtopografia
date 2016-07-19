@@ -1,14 +1,15 @@
 <?php 
-	require_once("../conexion/bd.php");
-	require_once("../controlador/empresa_controlador.php");
+	require_once("../../conexion/bd.php");
+	require_once("../../controlador/empresa_controlador.php");
+	require_once("../../modelo/empresa_modelo.php");
 ?>
 <html>
 	<head>
 		<title> MGTOPOGRAFIA </title>		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       	<meta name="HandheldFriendly" content="true" />
-      	<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css"  media="screen,projection"/>
-		<script src="js/jquery-1.11.js"></script>
+      	<link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"  media="screen,projection"/>
+		<script src="../js/jquery-1.11.js"></script>
       	<script type="text/javascript">
       		$(document).ready(function(){
       			$("#guardar_historia").hide();

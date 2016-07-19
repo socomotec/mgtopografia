@@ -1,5 +1,5 @@
 <?php
-require_once("../modelo/empresa_modelo.php");
+
 
 function editar_historia($historia, $id){
 
