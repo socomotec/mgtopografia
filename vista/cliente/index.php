@@ -9,9 +9,9 @@ foreach(buscar_informacion() as $informacion){
 	echo $informacion['historia']; 
 	echo $informacion['mision'];
 	echo $informacion['vision'];
-
-}
 //Para cada pagina tienes que hacer este procedimiento.
+?>
+
 
 <!DOCTYPE html>
 <html lang="es">
