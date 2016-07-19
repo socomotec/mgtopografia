@@ -52,7 +52,7 @@
                     </a> 
                     <ul id="pagina" class="panel-collapse collapse">
                         <li>
-                            <a href="reseña_historica.php" target="contenido"> <i class="fa fa-history" aria-hidden="true"></i> Historia</a>
+                            <a href="resena_historica.php" target="contenido"> <i class="fa fa-history" aria-hidden="true"></i> Historia</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Misión</a>
