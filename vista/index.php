@@ -1,6 +1,7 @@
 <?php 
 	require_once("../conexion/bd.php");
 	require_once("../controlador/empresa_controlador.php");
+	Require_once("../modelo/empresa_modelo.php");
 ?>
 <html>
 	<head>
