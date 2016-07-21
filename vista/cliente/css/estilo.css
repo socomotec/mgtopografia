@@ -1,0 +1,40 @@
+body {
+ 
+}
+
+.full{
+    height: 100%;
+    
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+
+    /* Remove any browser-default margins. */
+    
+	padding-top:70px;
+  	
+}
+
+#page-top {
+  	background-color: #1E88E5;  	
+ }
+ #nosotros {
+ 	 background-color: #673ab7;
+ }
+ #calidad {
+ 	 background-color: #00bcd4;
+ }
+ #servicios {
+ 	 background-color: #ff9800;
+ }
+ #areatrabajo {
+ 	 background-color: #673ab7;
+ }
+ #galeria {
+ 	 background-color: #009688;
+ }
+ #contacto {
+ 	 background-color: #ff9800;
+ }
