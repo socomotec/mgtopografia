@@ -1,6 +1,6 @@
 body {
- 
-}
+      position: relative;
+  }
 
 .full{
     height: 100%;
@@ -10,7 +10,7 @@ body {
 
     /* Remove any browser-default margins. */
     
-	padding-top:70px;
+	padding-top:50px;
   	
 }
 

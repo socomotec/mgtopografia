@@ -11,7 +11,8 @@
 	<title>Reseña Histórica</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="HandheldFriendly" content="true" />
-    <link type="text/css" rel="stylesheet" href="../css/estilo.css" /> 
+    <link type="text/css" rel="stylesheet" href="../css/estilo.css" />
+    <link type="text/css" rel="stylesheet" href="../animate/animate.css" /> 
     <link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"  media="screen,projection" />
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 	<script src="../js/jquery-1.11.js"></script>
@@ -61,15 +62,19 @@
 		          	if(data == "1"){
 
 		          		$("#alerta_informacion").text("La información se actualizo correctamente.");
-		          		$("#alerta").addClass("alert-success in");
+		          		$("#alerta").removeClass("fadeOut");
+		          		$("#alerta").addClass("alert-success alert alert-dismissible fade in animated fadeIn");
 		          		$("#alerta").show();
 		          		$("#guardar_informacion").hide();
 		          		$("#editar_informacion").show();
+		          		cronometro_alerta();
+
 		          		
 
 		          	}else{
 		          		$("#alerta_informacion").text("La información no se logro actualizar.");
-		          		$("#alerta").addClass("alert-danger in");
+		          		$("#alerta").removeClass("fadeOut");
+		          		$("#alerta").addClass("alert-danger alert alert-dismissible fade in animated fadeIn");
 		          		$("#alerta").show();
 		          		$("#guardar_informacion").hide();
 		          		$("#editar_informacion").show();
@@ -82,6 +87,28 @@
 			});
 
 		});
+
+	function cronometro_alerta(){
+
+		contador_segundos =0;
+ 	    
+ 	    cronometro = setInterval(
+            		function(){
+                if(contador_segundos==5)
+                {
+                $("#alerta").removeClass("fadeIn");
+                $("#alerta").addClass("fadeOut");
+                }
+
+                if(contador_segundos ==6){
+                	$("#alerta").hide();
+                	clearInterval(cronometro);
+                }
+                contador_segundos++;
+            		}
+            	,1000);
+
+	}
 	</script>
 
 </head>
@@ -97,7 +124,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div id="alerta" class="alert alert-dismissible fade" role="alert"> <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button> <span id="alerta_informacion"></span> </div>
+				<div id="alerta" class="" role="alert"> <span id="alerta_informacion"></span> </div>
 				<?php foreach(buscar_informacion() as $informacion){ ?>
 					<textarea id="historia" class="form-control textarea " rows="15" readonly><?php echo $informacion['historia']; ?></textarea>
 				<?php } ?>
