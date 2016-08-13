@@ -115,6 +115,8 @@ foreach(buscar_informacion() as $informacion){
 	</div>
 	<div id="contacto" class="container-fluid full">
 		<h1>Contacto</h1>
+
+		<a href="mailto:tudireccion@email.com"> mgtopografia@mgtopografia.cl </a>
 		
 	</div>
 	<footer class="footer">
