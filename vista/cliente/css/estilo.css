@@ -48,11 +48,15 @@ body {
 }
 
 .img-principal{
+    min-height: 50px;
+    margin-top: -15px;
     max-width: 200px;
     max-height: 300px;
 }
 
 .img-principal-md{
+    margin-top: -10px;
+    min-height: 50px;
     max-width: 100px;
     max-height: 150px;
 }

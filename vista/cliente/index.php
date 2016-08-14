@@ -29,7 +29,7 @@ require_once("../../controlador/empresa_controlador.php");
 		
 		<div class="container"> 
 			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menus" style="margin-top:15px;"> 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menus" style="margin-top:10px;"> 
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
                 	<span class="icon-bar"></span>
@@ -39,7 +39,7 @@ require_once("../../controlador/empresa_controlador.php");
 
 				<a id="img-principal-lg" class="page-scroll visible-lg" href="#page-top"> <img class="img-principal" src="imagenes/mgtopo.png" alt="Brand"> </a>	
 				<a id="img-principal-md" class="page-scroll visible-md" href="#page-top"> <img class="img-principal-md" src="imagenes/mgtopo.png" alt="Brand"> </a>	
-				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top" style="height:80px; margin-top:-5px;"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
+				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
 				
 			</div>
 			<div id="div-brs"">
