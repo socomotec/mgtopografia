@@ -4,14 +4,7 @@ require_once("../../conexion/bd.php");
 require_once("../../modelo/empresa_modelo.php");
 require_once("../../controlador/empresa_controlador.php");
 
-foreach(buscar_informacion() as $informacion){
 
-	/*echo $informacion['historia']; 
-	echo $informacion['mision'];
-	echo $informacion['vision'];
-	
-//Para cada pagina tienes que hacer este procedimiento.*/
-	}
 
 
 ?>
@@ -37,19 +30,20 @@ foreach(buscar_informacion() as $informacion){
 		
 		<div class="container"> 
 			<div class="navbar-header page-scroll"">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menus"> 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menus" style="margin-top:15px;"> 
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
                 	<span class="icon-bar"></span>
                 	<span class="icon-bar"></span>
 				</button> 
 				<a id="img-principal-lg" class="page-scroll visible-lg" href="#page-top"> <img class="img-principal" src="imagenes/mgtopo.png" alt="Brand"> </a>	
 				<a id="img-principal-md" class="page-scroll visible-md" href="#page-top"> <img class="img-principal-md" src="imagenes/mgtopo.png" alt="Brand"> </a>	
 
-				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
-				<a class="navbar-brand page-scroll visible-xs " href="#page-top"> MG Topografía</a>			
+				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top" style="height:70px;"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
+						
 				
-				<a class="navbar-brand pull-right visible-xs visible-sm" href="#page-top" id="face"><i class="fa fa-facebook fa-lg" aria-hidden="true"> </i>&nbsp;</a>
+				
 			</div>
 			<div id="div-brs"">
 				<br class="visible-lg">
@@ -111,23 +105,11 @@ foreach(buscar_informacion() as $informacion){
 	</nav>
 	
 	<div id="page-top" class="container-fluid full">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<h1>Inicio</h1>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
 	</div>
 
 	<div id="nosotros" class="container-fluid full">
-		<h1>Calidad</h1>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		
 	</div>
 	<div id="calidad" class="container-fluid full">
 		<h1>Calidad</h1>
@@ -150,12 +132,12 @@ foreach(buscar_informacion() as $informacion){
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
 	<div id="contacto" class="container-fluid full">
-<<<<<<< HEAD
+
 		<h1>Contacto</h1>
 
-		<a href="mailto:tudireccion@email.com"> mgtopografia@mgtopografia.cl </a>
+		<a href="mailto:direccion@destinatario.com?body=Este%20es%20el%20cuerpo%20del%20mensaje"> mgtopografia@mgtopografia.cl </a>
 		
-=======
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -215,7 +197,7 @@ foreach(buscar_informacion() as $informacion){
 		</div>
 	</div>
 
->>>>>>> origin/master
+
 	</div>
 	<footer class="footer">
       <div class="container">
