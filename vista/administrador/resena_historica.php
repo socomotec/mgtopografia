@@ -125,7 +125,7 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div id="alerta" class="" role="alert"> <span id="alerta_informacion"></span> </div>
-				<?php foreach(buscar_informacion() as $informacion){ ?>
+				<?php foreach(buscar_informacion_empresa() as $informacion){ ?>
 					<textarea id="historia" class="form-control textarea " rows="15" readonly><?php echo $informacion['historia']; ?></textarea>
 				<?php } ?>
 			</div>
