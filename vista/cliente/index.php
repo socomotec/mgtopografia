@@ -150,12 +150,12 @@ require_once("../../controlador/empresa_controlador.php");
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
 	<div id="contacto" class="container-fluid full">
-<<<<<<< HEAD
+
 		<h1>Contacto</h1>
 
 		<a href="mailto:tudireccion@email.com"> mgtopografia@mgtopografia.cl </a>
 		
-=======
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -215,7 +215,6 @@ require_once("../../controlador/empresa_controlador.php");
 		</div>
 	</div>
 
->>>>>>> origin/master
 	</div>
 	<footer class="footer">
       <div class="container">
