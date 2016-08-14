@@ -4,14 +4,6 @@ require_once("../../conexion/bd.php");
 require_once("../../modelo/empresa_modelo.php");
 require_once("../../controlador/empresa_controlador.php");
 
-/*foreach(buscar_informacion() as $informacion){
-
-	echo $informacion['historia']; 
-	echo $informacion['mision'];
-	echo $informacion['vision'];
-	
-//Para cada pagina tienes que hacer este procedimiento.
-	}*/
 
 
 ?>
@@ -36,20 +28,19 @@ require_once("../../controlador/empresa_controlador.php");
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
 		
 		<div class="container"> 
-			<div class="navbar-header page-scroll"">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menus"> 
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menus" style="margin-top:15px;"> 
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
                 	<span class="icon-bar"></span>
                 	<span class="icon-bar"></span>
-				</button> 
+                	<span class="icon-bar"></span>
+				</button>
+
 				<a id="img-principal-lg" class="page-scroll visible-lg" href="#page-top"> <img class="img-principal" src="imagenes/mgtopo.png" alt="Brand"> </a>	
 				<a id="img-principal-md" class="page-scroll visible-md" href="#page-top"> <img class="img-principal-md" src="imagenes/mgtopo.png" alt="Brand"> </a>	
-
-				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
-				<a class="navbar-brand page-scroll visible-xs " href="#page-top"> MG Topografía</a>			
+				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top" style="height:80px; margin-top:-5px;"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
 				
-				<a class="navbar-brand pull-right visible-xs visible-sm" href="#page-top" id="face"><i class="fa fa-facebook fa-lg" aria-hidden="true"> </i>&nbsp;</a>
 			</div>
 			<div id="div-brs"">
 				<br class="visible-lg">
