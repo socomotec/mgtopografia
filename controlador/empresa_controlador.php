@@ -39,6 +39,7 @@
 		$datos = $modelo_empresa->buscar_informacion_empresa();
 		
 		return $datos;
+
 	}
 
 	// Galeria de Imagenes
@@ -50,7 +51,50 @@
 		$datos = $modelo_empresa->buscar_imagen_galeria();
 
 		return $datos;
+
 	}
+
+	function subir_imagen($nombre, $ruta, $descripcion){
+  
+  		$modelo_empresa = new empresa_modelo();
+  
+  		$datos = $modelo_empresa->subir_imagen_galeria($nombre, $ruta, $descripcion);
+  
+  	}
+
+	function editar_imagen($id, $nombre, $ruta, $descripcion){
+  
+  		$modelo_empresa = new empresa_modelo();
+  
+  		$datos = $modelo_empresa->editar_imagen_galeria($id, $nombre, $ruta, $descripcion);
+  
+  	}
+
+	function eliminar_imagen($id){
+  
+  		$modelo_empresa = new empresa_modelo();
+  
+  		$datos = $modelo_empresa->eliminar_imagen_galeria($id);
+  
+  	}
+
+  	//Contacto
+
+  	function editar_contacto(){
+
+  		$modelo_empresa = new empresa_modelo();
+
+  		$datos = $modelo_empresa->editar_informacion_contacto($id, $nombre, $celular, $email);
+  	}
+
+  	function buscar_informacion_contacto(){
+
+  		$modelo_empresa = new empresa_modelo();
+
+  		$datos = $modelo_empresa->buscar_informacion_contacto();
+
+  		return $datos;
+  	}
 
 
 	
