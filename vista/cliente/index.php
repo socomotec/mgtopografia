@@ -102,18 +102,6 @@ require_once("../../controlador/empresa_controlador.php");
 	</nav>
 	
 	<div id="page-top" class="container-fluid full">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<h1>Inicio</h1>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 	</div>
 
 	<div id="nosotros" class="container-fluid full">
