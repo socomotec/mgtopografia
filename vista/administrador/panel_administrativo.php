@@ -55,10 +55,10 @@
                             <a href="resena_historica.php" target="contenido"> <i class="fa fa-history" aria-hidden="true"></i> Historia</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-flag" aria-hidden="true"></i> Misión</a>
+                            <a href="mision.php" target="contenido"><i class="fa fa-flag" aria-hidden="true"></i> Misión</a>
                         </li>
                         <li>
-                            <a href="#"> <i class="fa fa-eye" aria-hidden="true"></i> Visión</a>
+                            <a href="vision.php" target="contenido"> <i class="fa fa-eye" aria-hidden="true"></i> Visión</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-trophy" aria-hidden="true"></i> Calidad</a>

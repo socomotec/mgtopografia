@@ -8,17 +8,54 @@
 	$id = $_POST['id'];
 	$informacion = $_POST['informacion'];
 
-		if($bandera == 'historia'){
 
-			if(editar_historia($informacion, $id)){
+		switch($bandera){
 
-				echo "2";
+			case 'historia':
 
-			}else{
+				if(editar_historia($informacion, $id)){
+
+					echo "2";
+
+				}else{
+
+					echo "1";
+				}
+
+			break;
+
+			case 'mision':
+
+				if(editar_mision($informacion, $id)){
+
+					echo "2";
+
+				}else{
+
+					echo "1";
+
+				}
+
+			break;
+
+			case 'vision':
+
+				if(editar_vision($informacion, $id)){
+
+					echo "2";
+
+				}else{
+
+					echo "1";
+				}
+
+			break;
+
+			default:
 
 				echo "1";
 
-			}
+			break; 
 
 		}
 
