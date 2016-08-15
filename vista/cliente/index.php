@@ -42,7 +42,7 @@ require_once("../../controlador/empresa_controlador.php");
 				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
 				
 			</div>
-			<div id="div-brs"">
+			<div id="div-brs">
 				<br class="visible-lg">
 				<br class="visible-lg">
 				<br class="visible-md">
