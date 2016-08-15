@@ -62,19 +62,6 @@ require_once("../../controlador/empresa_controlador.php");
 					<li>
 						<a href="#nosotros" class= " zoom visible-xs visible-sm"><i class="fa fa-users fa-lg" aria-hidden="true"></i>&nbsp;¿Quiénes Somos?</a>
 						<a href="#nosotros" class=" zoom hidden-xs hidden-sm">¿Quiénes Somos?</a>
-			          	<!--
-			          	<ul class="dropdown-menu bajo" >
-			          		<li>
-			          			<a href="#resena"><i class="fa fa-hourglass-half" aria-hidden="true"></i>&nbsp; Reseña Histórica</a>
-			          		</li>
-				            <li>
-				            	<a href="#mision"><i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp; Misión</a>
-				            </li>
-				            <li>
-				            	<a href="#vision"><i class="fa fa-eye" aria-hidden="true"></i> &nbsp;Visión</a>
-				            </li>
-			          	</ul>
-			          	-->
 			        </li>
 					<li> 
 						<a class=" zoom visible-xs visible-sm" href="#calidad"><i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>&nbsp;Calidad</a>
@@ -105,8 +92,45 @@ require_once("../../controlador/empresa_controlador.php");
 	</div>
 
 	<div id="nosotros" class="container-fluid full">
-		<h1>Calidad</h1>
-		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<div class="container">
+			<div class="row hidden-xs">
+		         <div class="col-lg-3 col-md-3 col-sm-4">
+		           <div class="list-group table-of-contents">
+		             <a class="list-group-item" href="#resena">Reseña Histórica</a>
+		             <a class="list-group-item" href="#mision">Misión</a>
+		             <a class="list-group-item" href="#vision">Visión</a>
+		           </div>
+		         </div>
+		         <div class="col-md-8">
+		         	<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+					<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		         </div>
+		    </div>
+		</div>
+
+		<div class="visible-xs">
+			<ul class="nav nav-tabs center-block">
+			  <li class="active"><a href="#resena" data-toggle="tab">Reseña Historica</a></li>
+			  <li>				 <a href="#mision" data-toggle="tab">Mision</a></li>
+			  <li> 				 <a href="#vision" data-toggle="tab">Vision</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+			  <div class="tab-pane fade active in" id="resena">
+			    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+			  </div>
+			  <div class="tab-pane fade" id="mision">
+			    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+			  </div>
+			  <div class="tab-pane fade" id="vision">
+			    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+			  </div>
+			</div>
+		</div>
 	</div>
 	<div id="calidad" class="container-fluid full">
 		<h1>Calidad</h1>
