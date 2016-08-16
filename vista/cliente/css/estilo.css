@@ -3,7 +3,7 @@ body {
   }
 
 #page-top{
-	background-image: url("../imagenes/topoxs.jpg");
+	background-image: url("../imagenes/topo.jpg");
     /* Nos aseguramos que la imagen de fondo este centrada vertical y
     horizontalmente en todo momento */
     background-position: center center;
@@ -20,25 +20,50 @@ body {
     background-color: #464646;
 
 }
-@media (min-width: 768px) {
-    #page-top{
-        background-image: url("../imagenes/topo.jpg");
-    }
-}
 
+#contacto{
+    background-image: url("../imagenes/contac.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+.img-contacto{
+    height: 170px;
+    width: 170px;
+}
+.zoom-contac{
+    transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+.zoom-contac:hover{
+    transform : scale(1.05);
+    -moz-transform : scale(1.05); 
+    -webkit-transform : scale(1.05); 
+    -o-transform : scale(1.05); 
+    -ms-transform : scale(1.05); 
+    }
+#mensaje{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 15px;
+    box-shadow: 2px 2px 5px #999
+}
+.target{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #999
+
+}
 
 .full{    
     height: 100%;
-    
-
-    /* Set the height to match that of the viewport. */
     height: 100vh;
-
-    /* Set the width to match that of the viewport. */
+    padding-top: 50px;
     
-
-    /* Remove any browser-default margins. */
-    margin: 0;
 }
 #face{
     color: #3b5998;
