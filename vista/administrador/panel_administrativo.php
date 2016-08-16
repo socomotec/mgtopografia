@@ -73,7 +73,7 @@
                             <a href="#"> <i class="fa fa-picture-o" aria-hidden="true"></i> Galería </a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Contacto</a>
+                            <a href="contacto.php" target="contenido"><i class="fa fa-user" aria-hidden="true"></i> Contacto</a>
                         </li>
 
                     </ul>
@@ -96,7 +96,7 @@
             </ul>
         </div>
     
-        <iframe id="contenido" name="contenido" width="100%"></iframe>
+        <iframe id="contenido" name="contenido" width="100%" frameborder="0"></iframe>
     
     </div>
 

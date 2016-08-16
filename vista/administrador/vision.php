@@ -117,7 +117,7 @@
 	<div class="container ">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h3> Visión </h3>
+				<h3> Visión de la empresa</h3>
 				<hr />
 				<br />
 			</div>
