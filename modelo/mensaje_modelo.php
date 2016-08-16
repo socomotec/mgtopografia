@@ -16,12 +16,8 @@ class mensaje_modelo{
 	public function buscar_mensaje($estado){
 
 
-		$consulta=$this->db->prepare("SELECT * FROM empresa WHERE estado = ?");
-				
-		$consulta->bind_param('i', $estado);
-				
-		$consulta->execute();
-
+		$consulta = $this->db->query("SELECT * FROM mensaje WHERE estado = $estado");
+			
 		while($filas = $consulta->fetch_assoc()){
 				
 			$this->mensaje[]=$filas;

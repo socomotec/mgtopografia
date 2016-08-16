@@ -1,7 +1,7 @@
 <?php 
 	require_once("../../conexion/bd.php");
-	require_once("../../controlador/empresa_controlador.php");
-	require_once("../../modelo/empresa_modelo.php");
+	require_once("../../controlador/mensaje_controlador.php");
+	require_once("../../modelo/mensaje_modelo.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,16 +79,19 @@
 			    	<br />
 			    	<table class="table table-hover">
   						<thead>
+  							<th style="display:none;">id</th>
   							<th>Nombre</th>
   							<th>Celular</th>
   							<th class="hidden-xs hidden-sm">Correo</th>
   							<th>Acciones</th>
   						</thead>
   						<tbody>
+  							<?php foreach(buscar_mensaje(1) as $mensaje){ ?>
   							<tr>
-  								<td> Sebastián Salas </td>
-  								<td> 975479576 </td>
-  								<td class="hidden-xs hidden-sm"> ssalas@socomtec.cl </td>
+  								<td style="display:none;"><?php echo $mensaje['id']; ?></td>
+  								<td><?php echo $mensaje['nombre']; ?></td>
+  								<td>+56<?php echo $mensaje['telefono']; ?></td>
+  								<td class="hidden-xs hidden-sm"><?php echo $mensaje['correo']; ?></td>
   								<td> 
   									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
   										<i class="fa fa-comment" aria-hidden="true"></i>
@@ -102,24 +105,9 @@
 								</td>
 
   							</tr>
+  							<?php } ?>
 
-  							<tr>
-  								<td> Misael Arroyo</td>
-  								<td> 975479576 </td>
-  								<td class="hidden-xs hidden-sm"> marroyo@socomtec.cl </td>
-  								<td> 
-  									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-  										<i class="fa fa-comment" aria-hidden="true"></i>
-  									</div>
-  									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-  										<i class="fa fa-check" aria-hidden="true"></i>
-  									</div>
-  									<div>
-										<i class="fa fa-trash" aria-hidden="true"></i>
-									</div>
-								</td>
-
-  							</tr>
+  							
   						</tbody>
   						<tfoot>
   							
