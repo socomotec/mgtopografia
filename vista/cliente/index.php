@@ -3,9 +3,6 @@
 require_once("../../conexion/bd.php");
 require_once("../../modelo/empresa_modelo.php");
 require_once("../../controlador/empresa_controlador.php");
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -91,71 +88,101 @@ require_once("../../controlador/empresa_controlador.php");
 	<div id="page-top" class="container-fluid full">
 	</div>
 
-	<div id="nosotros" class="container-fluid full">
-		<br>
-		<br>
-		<br>
-		<br>
-		
+	<div id="nosotros" class="container-fluid full">		
 		<div class="container">
-			<div class="row hidden-xs">
-		         <div class="col-lg-3 col-md-3 col-sm-4">
-		           <div class="list-group table-of-contents">
-		             <a class="list-group-item" href="#resena">Reseña Histórica</a>
-		             <a class="list-group-item" href="#mision">Misión</a>
-		             <a class="list-group-item" href="#vision">Visión</a>
-		           </div>
-		         </div>
-		         <div class="col-md-8">
-		         	<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-					<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		         </div>
-		    </div>
-		</div>
+			<br>
+			<br>
+			<br>
+			<div class="page-header text-center">
+            	<h1>Reseña Histórica</h1>
+        	</div>
 
-		<div class="visible-xs">
-			<ul class="nav nav-tabs center-block">
-			  <li class="active"><a href="#resena" data-toggle="tab">Reseña Historica</a></li>
-			  <li>				 <a href="#mision" data-toggle="tab">Mision</a></li>
-			  <li> 				 <a href="#vision" data-toggle="tab">Vision</a></li>
-			</ul>
-			<div id="myTabContent" class="tab-content">
-			  <div class="tab-pane fade active in" id="resena">
-			    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-			  </div>
-			  <div class="tab-pane fade" id="mision">
-			    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-			  </div>
-			  <div class="tab-pane fade" id="vision">
-			    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-			  </div>
+			<div class="row">
+				<div class="hidden-xs hidden-sm">
+				    <ul class="nav nav-pills nav-stacked col-md-3">
+						<li class="active">
+					  		<a href="#resena" data-toggle="tab">Reseña Historica</a>
+					  	</li>
+					  	<li>				 
+					  		<a href="#mision" data-toggle="tab">Mision</a>
+					  	</li>
+					  	<li> 				 
+					  		<a href="#vision" data-toggle="tab">Vision</a>
+					  	</li>
+					</ul>
+				</div>
+				<div class="visible-xs visible-sm">
+					<ul class="nav nav-tabs">
+						<li class="active">
+					  		<a href="#resena" data-toggle="tab">Reseña Historica</a>
+					  	</li>
+					  	<li>				 
+					  		<a href="#mision" data-toggle="tab">Mision</a>
+					  	</li>
+					  	<li> 				 
+					  		<a href="#vision" data-toggle="tab">Vision</a>
+					  	</li>
+					</ul>
+				</div>
+				<div id="tab_nosotros" class="tab-content col-md-9">
+					<div class="tab-pane fade active in" id="resena">
+					    <?php foreach(buscar_informacion_empresa() as $informacion){ ?>
+							<p><?php echo $informacion['historia']; ?></p>
+						<?php } ?>
+					</div>
+					<div class="tab-pane fade" id="mision">
+						<?php foreach(buscar_informacion_empresa() as $informacion){ ?>
+							<p><?php echo $informacion['mision']; ?></p>
+						<?php } ?>
+					</div>
+					<div class="tab-pane fade" id="vision">
+						<?php foreach(buscar_informacion_empresa() as $informacion){ ?>
+							<p><?php echo $informacion['vision']; ?></p>
+						<?php } ?>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</div>
 	<div id="calidad" class="container-fluid full">
+		<div class="page-header text-center">
+           	<h1>Calidad</h1>
+        </div>
+
 		<h1>Calidad</h1>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
 	<div id="servicios" class="container-fluid full">
-		<h1>Servicios</h1>
+		<div class="page-header text-center">
+           	<h1>Servicios</h1>
+        </div>
+		
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
 	<div id="areatrabajo" class="container-fluid full">
-		<h1>Áreas de Trabajo</h1>
+		<div class="page-header text-center">
+           	<h1>Áreas de Trabajo</h1>
+        </div>
+		
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
 	<div id="galeria" class="container-fluid full">
-		<h1>Galería</h1>
+		<div class="page-header text-center">
+           	<h1>Galería</h1>
+        </div>
+	
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
+
 	<div id="contacto" class="container-fluid full">
-
-		<h1>Contacto</h1>
-
+		<div class="page-header text-center">
+           	<h1>Contacto</h1>
+        </div>
+		
 		<a href="mailto:tudireccion@email.com"> mgtopografia@mgtopografia.cl </a>
 		
 
