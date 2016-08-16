@@ -1,5 +1,4 @@
 <?php 
-
 require_once("../../conexion/bd.php");
 require_once("../../modelo/empresa_modelo.php");
 require_once("../../controlador/empresa_controlador.php");
@@ -39,23 +38,20 @@ require_once("../../controlador/empresa_controlador.php");
 				<a class="navbar-brand page-scroll visible-sm visible-xs" href="#page-top"> <img class="img-principal-md " src="imagenes/mgtopo.png" alt="Brand"> </a>		
 				
 			</div>
-			<div id="div-brs">
+			<div id="div-brs"">
 				<br class="visible-lg">
 				<br class="visible-lg">
 				<br class="visible-md">
 			</div>
 			<div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="menus">	
-
 				<ul class="nav navbar-nav"> 
 					<li class="hidden active">
 						<a href="#page-top"></a> 
 					</li>
-
 					<li> 
 						<a class=" zoom visible-xs visible-sm" href="#page-top"> <i class="fa fa-home fa-lg" aria-hidden="true"></i> &nbsp; Inicio </a> 
 						<a class=" zoom hidden-xs hidden-sm" href="#page-top"> <i class="fa fa-home fa-lg" aria-hidden="true"> </i></a> 
 					</li> 
-
 					<li>
 						<a href="#nosotros" class= " zoom visible-xs visible-sm"><i class="fa fa-users fa-lg" aria-hidden="true"></i>&nbsp;¿Quiénes Somos?</a>
 						<a href="#nosotros" class=" zoom hidden-xs hidden-sm">¿Quiénes Somos?</a>
@@ -87,7 +83,6 @@ require_once("../../controlador/empresa_controlador.php");
 	
 	<div id="page-top" class="container-fluid full">
 	</div>
-
 	<div id="nosotros" class="container-fluid full">		
 		<div class="container">
 			<br>
@@ -96,8 +91,6 @@ require_once("../../controlador/empresa_controlador.php");
 			<div class="page-header text-center">
             	<h1>Reseña Histórica</h1>
         	</div>
-
-<<<<<<< HEAD
 			<div class="row">
 				<div class="hidden-xs hidden-sm">
 				    <ul class="nav nav-pills nav-stacked col-md-3">
@@ -142,27 +135,6 @@ require_once("../../controlador/empresa_controlador.php");
 						<?php } ?>
 					</div>
 				</div>				
-=======
-		<div class="visible-xs">
-			<ul class="nav nav-tabs center-block">
-			  <li class="active"><a href="#resena" data-toggle="tab">Reseña Historica</a></li>
-			  <li>				 <a href="#mision" data-toggle="tab">Mision</a></li>
-			  <li> 				 <a href="#vision" data-toggle="tab">Vision</a></li>
-			</ul>
-			<div id="myTabContent" class="tab-content">
-			  <div class="tab-pane fade active in" id="resena">
-			  	<br />
-				<?php foreach(buscar_informacion_empresa() as $informacion){ ?>
-				<p> <?php echo $informacion['historia']; ?></p>
-				<?php } ?> 
-			  </div>
-			  <div class="tab-pane fade" id="mision">
-			    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-			  </div>
-			  <div class="tab-pane fade" id="vision">
-			    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-			  </div>
->>>>>>> origin/master
 			</div>
 		</div>
 	</div>
@@ -170,7 +142,6 @@ require_once("../../controlador/empresa_controlador.php");
 		<div class="page-header text-center">
            	<h1>Calidad</h1>
         </div>
-
 		<h1>Calidad</h1>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
@@ -199,7 +170,6 @@ require_once("../../controlador/empresa_controlador.php");
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>	
 	</div>
-
 	<div id="contacto" class="container-fluid full">
 		<div class="page-header text-center">
            	<h1>Contacto</h1>
@@ -207,7 +177,6 @@ require_once("../../controlador/empresa_controlador.php");
 		
 		<a href="mailto:tudireccion@email.com"> mgtopografia@mgtopografia.cl </a>
 		
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -266,7 +235,6 @@ require_once("../../controlador/empresa_controlador.php");
 			</div>
 		</div>
 	</div>
-
 	</div>
 	<footer class="footer">
       <div class="container">
@@ -280,14 +248,12 @@ require_once("../../controlador/empresa_controlador.php");
 	    	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
 		        <h5 class="text-muted text-center"> <i class="fa fa-rss" aria-hidden="true"></i> RRSS: </h5>
 		        <hr />
-
 		        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 		        	<p class="text-right"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </p>
 		        </div>
 		        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 		       	 <i class="fa fa-instagram" aria-hidden="true"></i>
 		        </div>
-
 	    	</div>
         </div>
         <div class="row">
@@ -296,19 +262,15 @@ require_once("../../controlador/empresa_controlador.php");
       </div>
 </footer>
 <script>
-
 		$('body').scrollspy({target: ".navbar", offset: 50});
-
   // Add smooth scrolling on all links inside the navbar
   $("#menus a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -321,7 +283,6 @@ require_once("../../controlador/empresa_controlador.php");
     }  // End if
   });
 	</script>
-
 	<script src="../cliente/js/classie.js"></script>
     <script src="../cliente/js/cbpAnimatedHeader.js"></script>
 </body>
